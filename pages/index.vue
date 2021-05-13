@@ -18,7 +18,7 @@
       >
         Aucun produit trouvé !
       </v-alert>
-      <v-card>
+      <v-card style="background-color:gray;">
         <v-card-title
           class="headline"
         >
