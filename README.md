@@ -1,8 +1,8 @@
 # produits
 
 Retrieve data from OpenFoodFact api with bar code number
-SPA web app  
-Build with Nuxt and vuetify 
+SPA web app   
+Build with Nuxt and vuetify   
 
 ## Build Setup
 
