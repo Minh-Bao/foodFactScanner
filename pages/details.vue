@@ -47,6 +47,15 @@
               >
             </v-list-tile>
           </v-list>
+          <v-card-actions>
+            <v-btn
+              flat
+              to="/components"
+              color="orange"
+            >
+              Composants
+            </v-btn>
+          </v-card-actions>
         </v-card-text>
       </v-card>
     </v-flex>
