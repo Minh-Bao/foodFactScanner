@@ -40,6 +40,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data () {
     return {
@@ -49,7 +51,16 @@ export default {
   },
   methods: {
     submit () {
-      // Ici il faut traiter la soumission
+      if (this.code !== 0 && !isNaN(this.code)) {
+        axios.get(`https://fr.openfoodfacts.org/api/v0/produit/${this.code}.json`)
+          .then((res) => {
+            if (res.data.status) {
+              this.$store.commit('setData', res.data.product)
+            } else {
+              this.alert = true
+            }
+          })
+      }
     }
   }
 }
