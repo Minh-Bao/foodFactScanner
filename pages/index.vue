@@ -57,6 +57,7 @@ export default {
           .then((res) => {
             if (res.data.status) {
               this.$store.commit('setData', res.data.product)
+              this.$router.push('/details')
             } else {
               this.alert = true
             }
