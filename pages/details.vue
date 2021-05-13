@@ -23,19 +23,19 @@
           <v-list>
             <v-list-tile>
               <v-list-tile-title><strong>Marque :</strong> {{ $store.state.data.brands }}</v-list-tile-title>
-            </v-list-tile>
+            </v-list-tile><br>
             <v-list-tile v-if="$store.state.data.serving_size">
               <v-list-tile-title><strong>Quantité :</strong> {{ $store.state.data.serving_size }}</v-list-tile-title>
-            </v-list-tile>
+            </v-list-tile><br>
             <v-list-tile>
               <v-list-tile-title><strong>Conditionnement :</strong> {{ $store.state.data.packaging_tags.join(', ') }}</v-list-tile-title>
-            </v-list-tile>
+            </v-list-tile><br>
             <v-list-tile>
               <v-list-tile-title><strong>Magasins :</strong> {{ $store.state.data.stores }}</v-list-tile-title>
-            </v-list-tile>
+            </v-list-tile><br>
             <v-list-tile v-if="$store.state.data.manufacturing_places">
               <v-list-tile-title><strong>Fabrication :</strong> {{ $store.state.data.manufacturing_places }}</v-list-tile-title>
-            </v-list-tile>
+            </v-list-tile><br>
             <v-list-tile v-if="$store.state.data.labels">
               <v-list-tile-title>{{ $store.state.data.labels }}</v-list-tile-title>
             </v-list-tile>
