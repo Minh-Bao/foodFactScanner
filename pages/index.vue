@@ -2,22 +2,26 @@
   <v-layout
     column
     justify-center
-    align-center>
+    align-center
+  >
     <v-flex
       xs12
       sm8
-      md6>
-      <div class="text-xs-center">
+      md6
+    >
+      <div class="text-md-center">
         <img src="https://static.openfoodfacts.org/images/misc/openfoodfacts-logo-fr-178x150.png">
       </div>
       <v-alert
         :value="alert"
-        type="error">
+        type="error"
+      >
         Aucun produit trouvé !
       </v-alert>
       <v-card>
         <v-card-title
-          class="headline">
+          class="headline"
+        >
           Bienvenue sur Open Food Facts !
         </v-card-title>
         <v-card-text>
@@ -37,14 +41,14 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       code: '',
       alert: false
     }
   },
   methods: {
-    submit() {
+    submit () {
       // Ici il faut traiter la soumission
     }
   }
