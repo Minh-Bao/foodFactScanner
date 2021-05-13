@@ -27,10 +27,11 @@
         <v-card-text>
           <v-form @submit.prevent="submit">
             <v-text-field
-              v-model="code"
+              v-model.lazy="code"
               label="Entrez le code barre et appuyez sur 'Entrée'"
               type="number"
               required
+              @change="reset"
             />
           </v-form>
         </v-card-text>
@@ -60,6 +61,11 @@ export default {
               this.alert = true
             }
           })
+      }
+    },
+    reset () {
+      if (this.code === '') {
+        this.alert = false
       }
     }
   }
