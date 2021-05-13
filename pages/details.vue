@@ -37,8 +37,8 @@
               <v-list-tile-title><strong>Fabrication :</strong> {{ $store.state.data.manufacturing_places }}</v-list-tile-title>
             </v-list-tile><br>
             <v-list-tile v-if="$store.state.data.labels">
-              <v-list-tile-title>{{ $store.state.data.labels }}</v-list-tile-title>
-            </v-list-tile>
+              <v-list-tile-title>{{ $store.state.data.labels }}</v-list-tile-title><br>
+            </v-list-tile><br>
             <v-list-tile>
               <img
                 :src="nutriscore($store.state.data.nutrition_grades)"
