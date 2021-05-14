@@ -4,7 +4,8 @@ Retrieve data from OpenFoodFact api with bar code number
 SPA web app   
 Build with Nuxt and vuetify   
 
-Enter bar code and display nutrient information from any product in your store....    
+Enter bar code and display nutrient information from any food product in your store....    
+/!\ only works if its registered in the api !  
 
 ## Todo  
 
