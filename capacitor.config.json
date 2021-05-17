@@ -1,6 +1,6 @@
 {
   "appId": "com.foodscanner.app",
-  "appName": "food_scanner",
+  "appName": "foodscanner",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
