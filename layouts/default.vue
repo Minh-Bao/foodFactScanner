@@ -18,9 +18,9 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-              <a :href="item.href" target=_blank>
-                <v-list-item-title v-text="item.title" />
-              </a>
+            <a :href="item.href" target=_blank>
+              <v-list-item-title v-text="item.title" />
+            </a>
           </v-list-item-content>
         </v-list-item>
       </v-list>
