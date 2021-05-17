@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">foodscanner</string>
+    <string name="title_activity_main">foodscanner</string>
+    <string name="package_name">com.foodscanner.app</string>
+    <string name="custom_url_scheme">com.foodscanner.app</string>
+</resources>
