@@ -1,0 +1,13 @@
+{
+  "appId": "com.foodscanner.app",
+  "appName": "food_scanner",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
