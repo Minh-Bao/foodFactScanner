@@ -1,8 +1,16 @@
-# produits
+# Food bar code scanner
 
 Retrieve data from OpenFoodFact api with bar code number   
 SPA web app   
 Build with Nuxt and vuetify   
+
+Enter bar code and display nutrient information from any food product in your store....    
+/!\ only works if its registered in the api !  
+
+## Todo  
+
+- Add a real bar code scanner so that user don't have to enter bar code if not wanted..  
+- Compile with cordova to use it in mobile   
 
 ## Build Setup
 
