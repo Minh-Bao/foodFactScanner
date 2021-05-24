@@ -12,6 +12,9 @@
       <div class="text-md-center">
         <img src="https://static.openfoodfacts.org/images/misc/openfoodfacts-logo-fr-178x150.png">
       </div>
+      <div>
+        <v-quagga :onDetected="logIt" :readerSize="readerSize" :readerTypes="['ean_reader']"></v-quagga>
+      </div>
       <v-alert
         :value="alert"
         type="error"
@@ -47,10 +50,18 @@ export default {
   data () {
     return {
       code: '',
-      alert: false
+      alert: false,
+      readerSize: {
+        width: 640,
+        height: 480
+      },
+      detecteds: []
     }
   },
   methods: {
+    logIt (data) {
+      console.log('detected', data)
+    },
     submit () {
       if (this.code !== 0 && !isNaN(this.code)) {
         axios.get(`https://fr.openfoodfacts.org/api/v0/produit/${this.code}.json`)
