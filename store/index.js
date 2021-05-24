@@ -1,6 +1,7 @@
 import Vuex from 'vuex'
 // import StreamBarcodeReader from 'vue-barcode-reader'
 
+
 // // register component 'v-quagga'
 // Vuex.use(VueQuagga);
 
