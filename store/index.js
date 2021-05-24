@@ -1,9 +1,11 @@
 import Vuex from 'vuex'
 // import StreamBarcodeReader from 'vue-barcode-reader'
-import VueQuagga from 'vue-quaggajs'
+
+// // register component 'v-quagga'
+// Vuex.use(VueQuagga);
 
 const createStore = () => {
-  return new Vuex.Use(VueQuagga).Store({
+  return new Vuex.Store({
     state: {
       data: {}
     },
